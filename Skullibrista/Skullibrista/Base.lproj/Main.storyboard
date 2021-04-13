@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skullibrista" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="C74-W2-5pf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player0" translatesAutoresizingMaskIntoConstraints="NO" id="aRu-4h-ZHd">
+                                <rect key="frame" x="117.5" y="203.5" width="140" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aRu-4h-ZHd" secondAttribute="height" multiplier="1:2" id="eIQ-Vn-AHx"/>
+                                    <constraint firstAttribute="width" constant="140" id="kDk-Fm-guO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="Yox-h6-tRI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yox-h6-tRI" secondAttribute="height" multiplier="1029:228" id="12H-qm-3qR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voce precisa se equilibrar usando o celular. Se a caveira sair da area delimitada, e GAME OVER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5V2-hK-7IN">
+                                <rect key="frame" x="36" y="40" width="303" height="115"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1b-O8-qEg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="nsh-KG-LPG">
+                                        <rect key="frame" x="87.5" y="28" width="200" height="148.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nsh-KG-LPG" secondAttribute="height" multiplier="452:336" id="4yZ-yA-N4L"/>
+                                            <constraint firstAttribute="width" constant="200" id="fQ2-YP-dKD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-Mq-fK3">
+                                        <rect key="frame" x="42.5" y="469" width="290" height="29"/>
+                                        <state key="normal" image="playAgain"/>
+                                        <connections>
+                                            <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Uf-e1-NW5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voce jogou durante x segundos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-tv-V9X">
+                                        <rect key="frame" x="62" y="418.5" width="251" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="0.9986223578453064" green="0.99874788522720337" blue="0.85032671689987183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kP5-Mq-fK3" firstAttribute="centerY" secondItem="h1b-O8-qEg" secondAttribute="centerY" constant="150" id="1xS-nW-oxx"/>
+                                    <constraint firstItem="nsh-KG-LPG" firstAttribute="centerX" secondItem="h1b-O8-qEg" secondAttribute="centerX" id="5RB-D3-Y1D"/>
+                                    <constraint firstItem="nsh-KG-LPG" firstAttribute="top" secondItem="h1b-O8-qEg" secondAttribute="top" constant="28" id="TP1-JF-tv5"/>
+                                    <constraint firstItem="kP5-Mq-fK3" firstAttribute="top" secondItem="BNO-tv-V9X" secondAttribute="bottom" constant="30" id="nHW-Zg-Jvp"/>
+                                    <constraint firstItem="kP5-Mq-fK3" firstAttribute="centerX" secondItem="h1b-O8-qEg" secondAttribute="centerX" id="pCm-f0-LuR"/>
+                                    <constraint firstItem="BNO-tv-V9X" firstAttribute="centerX" secondItem="h1b-O8-qEg" secondAttribute="centerX" id="rnu-PC-jkX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aRu-4h-ZHd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2Sr-p3-cMS"/>
+                            <constraint firstItem="aRu-4h-ZHd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7nm-ie-aKj"/>
+                            <constraint firstItem="h1b-O8-qEg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AZi-wF-4kN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5V2-hK-7IN" secondAttribute="trailing" constant="36" id="B2R-dG-tIa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yox-h6-tRI" secondAttribute="trailing" id="GQC-ry-FgG"/>
+                            <constraint firstItem="h1b-O8-qEg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TtT-Ov-47G"/>
+                            <constraint firstItem="5V2-hK-7IN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="W9H-gv-PJq"/>
+                            <constraint firstItem="h1b-O8-qEg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xqh-95-YJD"/>
+                            <constraint firstItem="5V2-hK-7IN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="acO-z1-PbF"/>
+                            <constraint firstItem="h1b-O8-qEg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cnq-RV-qkf"/>
+                            <constraint firstItem="Yox-h6-tRI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="de7-2X-Iwd"/>
+                            <constraint firstItem="Yox-h6-tRI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z68-va-CJB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbInstructions" destination="5V2-hK-7IN" id="6z5-IE-lfz"/>
+                        <outlet property="lbTimePlayed" destination="BNO-tv-V9X" id="9KG-r5-DXe"/>
+                        <outlet property="player" destination="aRu-4h-ZHd" id="Z0n-Jn-54Q"/>
+                        <outlet property="street" destination="C74-W2-5pf" id="WwY-iw-dKC"/>
+                        <outlet property="viGameOver" destination="h1b-O8-qEg" id="Xdq-4M-EOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gameOver" width="226" height="168"/>
+        <image name="playAgain" width="290" height="29"/>
+        <image name="player0" width="588" height="1176"/>
+        <image name="street" width="1400" height="2800"/>
+        <image name="sun" width="1029" height="228"/>
+    </resources>
+</document>
